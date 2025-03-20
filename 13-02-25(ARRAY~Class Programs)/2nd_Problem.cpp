@@ -7,7 +7,7 @@ int main()
     cout << "Enter 10 elements in array 1: ";
     for (i = 0; i < 10; i++) 
     {
-        cin >> arr1[i];
+        cin >> arr1[i];// entering 1st array
     }
     for (i = 0; i < 10; i++) 
     {

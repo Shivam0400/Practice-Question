@@ -2,7 +2,8 @@
 #include <string>
 using namespace std;
 
-class Faculty {
+class Faculty
+{
     string id;
     string name;
     string post;
@@ -23,18 +24,20 @@ public:
         cout << "Name: " << name << endl;
         cout << "Post: " << post << endl;
         cout << "Qualification: " << qualification << endl;
-        cout << "Address: " << address << endl;
+        cout << "Address: " << address << endl << endl;
     }
 };
 
-int main() {
+int main() 
+{
     Faculty faculty;
     string id, name, post, qualification, address;
 
     cout << "Enter Faculty ID: ";
     cin >> id;
     cout << "Enter Name: ";
-    cin.ignore();
+    getline(cin, name);
+    // cin.ignore();
     getline(cin, name);
     cout << "Enter Post: ";
     getline(cin, post);
